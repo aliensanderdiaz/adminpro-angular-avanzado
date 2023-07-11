@@ -8,6 +8,9 @@ import { Grafica1Component } from './grafica1/grafica1.component';
 import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
+import { ComponentsModule } from '../components/components.module';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
+
 
 
 
@@ -17,18 +20,21 @@ import { FormsModule } from '@angular/forms';
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
+    AccountSettingsComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     SharedModule,
-    FormsModule
+    FormsModule,
+    ComponentsModule,
   ],
   exports: [
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
+    AccountSettingsComponent
   ]
 })
 export class PagesModule { }
